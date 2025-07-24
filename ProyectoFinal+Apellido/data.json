@@ -1,0 +1,26 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "nombre": "Juan Perez",
+      "usuario": "juan",
+      "password": "1234",
+      "cuentas": [
+        {
+          "tipo": "Caja de Ahorro",
+          "moneda": "ARS",
+          "saldo": 150000,
+          "cbu": "000123456789"
+        }
+      ]
+    }
+  ],
+  "movimientos": [
+    {
+      "usuarioId": 1,
+      "tipo": "Depósito",
+      "monto": 50000,
+      "fecha": "2024-06-01"
+    }
+  ]
+}

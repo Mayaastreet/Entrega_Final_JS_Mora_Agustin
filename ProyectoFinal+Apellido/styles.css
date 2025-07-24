@@ -1,0 +1,81 @@
+:root {
+    --orange: #2012be;
+    --orange-dark: #1c2bb2;
+}
+html, body {
+    height: 100%;
+    min-height: 100%;
+}
+body {
+    min-height: 100vh;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    transition: background 0.3s, color 0.3s;
+}
+body.dark-mode {
+    background: #181818;
+    color: #f1f1f1;
+}
+.card {
+    margin-bottom: 1rem;
+}
+#toggle-theme {
+    z-index: 1000;
+}
+.text-orange { color: var(--orange); }
+.btn-orange {
+    background: var(--orange);
+    color: #fff;
+    border: none;
+}
+.btn-orange:hover, .btn-orange:focus {
+    background: var(--orange-dark);
+    color: #fff;
+}
+.login-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(245,245,245,0.97);
+    z-index: 2000;
+}
+body.dark-mode .login-overlay {
+    background: rgba(24,24,24,0.97);
+}
+.login-card {
+    min-width: 340px;
+    max-width: 370px;
+    border-radius: 1rem;
+    background: #fff;
+}
+body.dark-mode .login-card {
+    background: #232323;
+    color: #f1f1f1;
+}
+.toggle-password {
+    position: absolute;
+    top: 38px;
+    right: 12px;
+    cursor: pointer;
+    color: #aaa;
+    z-index: 10;
+}
+.toggle-password:hover { color: var(--orange); }
+body.dark-mode .sidebar,
+body.dark-mode .bg-white,
+body.dark-mode .login-card {
+    background: #232323 !important;
+    color: #f1f1f1 !important;
+}
+body.dark-mode .border-end,
+body.dark-mode .border-bottom {
+    border-color: #444 !important;
+}
+.main-wrapper {
+    min-height: 100vh;
+    height: 100vh;
+}
+.sidebar {
+    min-height: 100vh;
+    height: 100vh;
+}
